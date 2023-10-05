@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Saira+Stencil+One&display=swap');
 
+:root {
+  --cor-primarial: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover:#272727;    
+
+  --fonte-primaria: 'Saira Stencil One', cursive;
+  --fonte-secundaria:'Montsserrat', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,9 +33,9 @@
 }
 
 body {
-  background-color: black;
-  color: #F6F6F6;
-  font-family: "Inter", sans-serif;
+  background-color: var(--cor-primarial);
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria);
   
 }
 
@@ -41,10 +51,10 @@ body {
 }
 
 .cabecalho__menu__link {
-  font-family:'Montsserrat', sans-serif;
-  font-size: 24px;
+  font-family:var(--fonte-secundaria);
+  font-size: 1.5rem;;
   font-weight:600px;
-  color:#22D4FD;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
@@ -64,9 +74,9 @@ body {
 }
 
 .descricao__title{
-  font-size: 160px;
-  font-family: 'Saira Stencil One', cursive;
-  color: #DCDCDC;
+  font-size: 10rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
   animation: fadeIn 3.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
 }
@@ -85,22 +95,11 @@ body {
 
 
 .descricao__texto{
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-family: var(--fonte-secundaria)
   
 }
 
-.descricao__texto1{
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  gap: 0;
-}
-
-.descricao__texto2{
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;  
-  gap: 0;
-}
 
 .apresentacao__links{
   display: flex;
@@ -112,8 +111,8 @@ body {
 }
 
 .apresentaçao__links__subtitulo{
-font-size: 20px;
-font-family: 'Montserrat', sans-serif;
+font-size: 1.25rem;
+font-family: var(--fonte-secundaria);
 
 }
 
@@ -122,55 +121,56 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   gap: 16px;
-  border: 2px solid #22D4FD;
+  border: 2px solid var(--cor-terciaria);
   width: 378px;
   text-align: center;
   border-radius: 15px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 21.5px; 
   text-decoration: none;
   color: #f6f6f6f6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
 
 }
 
 .apresentacao__links__link:hover{
-background-color: #272727;
+background-color: var(--cor-hover);
 
 }
 
 
 .rodape{
   padding: 24px;
-  color: #000000;
-  background-color: #22D4FD;
+  color: var(--cor-primarial);
+  background-color: var(--cor-terciaria);
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
 
 }
 
 .descricao__curriculo{
-  font-size: 50px;
-  font-family: 'Saira Stencil One', cursive;
-  color: #DCDCDC;
+  font-size: 3.125rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
   animation: fadeIn 1.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
 }
 
 .descricao__curriculo1{
-  font-size: 50px;
-  font-family: 'Saira Stencil One', cursive;
-  color: #DCDCDC;
+  font-size: 3.125rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
   animation: fadeIn 2.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
 }
 
 .descricao__curriculo2{
-  font-size: 50px;
-  font-family: 'Saira Stencil One', cursive;
-  color: #DCDCDC;
+  font-size: 3.125rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
   animation: fadeIn 3.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
+  text-decoration: none;
 }
