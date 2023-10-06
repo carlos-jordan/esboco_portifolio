@@ -4,7 +4,8 @@
   --cor-primarial: #000000;
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #22D4FD;
-  --cor-hover:#272727;    
+  --cor-hover:#272727;  
+  --cor-responsive: #708090;  
 
   --fonte-primaria: 'Saira Stencil One', cursive;
   --fonte-secundaria:'Montsserrat', sans-serif;
@@ -30,6 +31,7 @@
     transform: translateY(0); /* Opcional: animação de deslocamento vertical */
     
   }
+
 }
 
 body {
@@ -63,10 +65,11 @@ body {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .descricao__conteudo{
-    width: 500px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -122,7 +125,7 @@ font-family: var(--fonte-secundaria);
   justify-content: center;
   gap: 16px;
   border: 2px solid var(--cor-terciaria);
-  width: 378px;
+  width: 50%;
   text-align: center;
   border-radius: 15px;
   font-size: 1.25rem;
@@ -136,6 +139,11 @@ font-family: var(--fonte-secundaria);
 
 .apresentacao__links__link:hover{
 background-color: var(--cor-hover);
+
+}
+
+.apresentação__imagem{
+  width:50%;
 
 }
 
@@ -172,5 +180,33 @@ background-color: var(--cor-hover);
   color: var(--cor-secundaria);
   animation: fadeIn 3.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
+}
+
+.descricao__curriculo3{
+  font-size: 1.25rem;
+  font-family: var(--fonte-secundaria);
   text-decoration: none;
+
+}
+
+
+
+@media (max-width: 830px) {
+  .cabecalho{
+    padding:2% 0% 0% 17%;
+  
+  }
+  
+
+  .descricao{
+    flex-direction: column-reverse;
+    padding:1%
+
+  }
+
+  .descricao__conteudo{
+    width: auto;
+
+  }
+
 }
