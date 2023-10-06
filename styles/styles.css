@@ -182,11 +182,9 @@ background-color: var(--cor-hover);
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
 }
 
-.descricao__curriculo3{
-  font-size: 1.25rem;
-  font-family: var(--fonte-secundaria);
+.descricao__curriculo3 a{
   text-decoration: none;
-
+  color: #22D4FD;
 }
 
 
