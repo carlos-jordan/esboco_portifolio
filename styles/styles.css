@@ -82,6 +82,7 @@ body {
   color: var(--cor-secundaria);
   animation: fadeIn 3.9s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
   display: inline-block; /* Isso faz com que as letras apareçam uma por uma */
+  width: 100%; 
 }
 
 .descricao__title:nth-child(1) {
@@ -198,10 +199,13 @@ background-color: var(--cor-hover);
 
   .descricao{
     flex-direction: column-reverse;
-    padding:1%
+    padding:1%;
 
   }
 
+  .descricao__title{
+    font-size: 6.25rem;
+  }
   .descricao__conteudo{
     width: auto;
 
