@@ -193,9 +193,14 @@ background-color: var(--cor-hover);
 @media (max-width: 830px) {
   .cabecalho{
     padding:2% 0% 0% 17%;
-  
+    justify-content: center;
   }
   
+  .cabecalho__menu {        
+    flex-direction:row;
+}
+}
+
 
   .descricao{
     flex-direction: column-reverse;
